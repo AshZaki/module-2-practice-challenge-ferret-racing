@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tunnel_id: 1
   ferret_id: 1
+  tunnel_id: 1
 
 two:
-  tunnel_id: 1
   ferret_id: 1
+  tunnel_id: 1

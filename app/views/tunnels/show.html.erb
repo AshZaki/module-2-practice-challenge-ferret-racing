@@ -1,0 +1,14 @@
+<h2><%=@tunnel.colour%></h2>
+
+	<div>
+		<p>Tunnel Length : <%= @tunnel.length %></p>
+	</div>
+
+<h2>Ferrets</h2>
+	
+	<% @tunnel.ferrets.each do |ferret| %>
+		<li> <%= link_to ferret.name, ferret %> </li>
+	<%end %>
+
+	
+<%= link_to 'Back', tunnels_path %> | <%= link_to 'See all ferrets', ferrets_path %> 

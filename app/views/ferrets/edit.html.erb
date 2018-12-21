@@ -1,15 +1,4 @@
-<h1>New Ferret</h1>
-
-	<ul>
-    <% if @ferret.errors %>
-      	<% @ferret.errors.full_messages.each do |e| %>
-      		<li>
-        		<%= e %>
-      		</li>
-    	<%end%> 
-  	
-	<%end%>
-	</ul>
+<h1>Edit Ferret</h1>
 
 <%= form_for @ferret do |f| %>
 	<%= f.label :name %>

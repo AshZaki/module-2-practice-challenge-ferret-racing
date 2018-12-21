@@ -6,6 +6,7 @@ class CharitiesController < ApplicationController
   end
 
   def show
+
     @ferrets = @charity.ferrets
   end
 

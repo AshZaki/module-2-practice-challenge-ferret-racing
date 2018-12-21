@@ -1,0 +1,17 @@
+<h1><%= @ferret.name %></h1>
+
+	<div>
+		<% if @ferret.neutered == true %>
+			<p> Neutered : Yes </p>
+		<%else%>
+			<p> neutered : No! </p>
+		<%end%>
+	</div>
+
+<h2>Charity</h2>
+
+	<div>
+		<li><%= link_to @ferret.charity.name, charity_path(@ferret.charity) %></li>
+	</div>
+
+<%= link_to 'Edit', edit_ferret_path(@ferret) %> | <%= link_to 'Back', ferrets_path %> 

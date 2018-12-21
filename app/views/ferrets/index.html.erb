@@ -1,5 +1,10 @@
 <h1>Wecome to FerretVille! Here are all our ferrets:</h1>
 
+	<div>
+		<%@ferrets.each do |ferret| %>
+			<li><%= link_to ferret.name, ferret %></li>
+		<%end%>
+	</div>
 
 
 
@@ -8,9 +13,6 @@
 
 
 
-
-
-
-
-<%= link_to 'New Ferret', new_ferret_path %>
-<%= link_to 'All Charities', charities_path %>
+<%= link_to 'New Ferret', new_ferret_path %> | 
+<%= link_to 'All Charities', charities_path %> | 
+<%= link_to 'All Tunnels', tunnels_path %>
